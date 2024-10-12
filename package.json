@@ -9,10 +9,13 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "expo": "~51.0.28",
+    "@react-navigation/native": "^6.1.18",
+    "ecofala": "file:",
+    "expo": "^45.0.8",
     "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
-    "react-native": "0.74.5"
+    "react-native": "0.74.5",
+    "react-native-web": "0.17.7"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"
