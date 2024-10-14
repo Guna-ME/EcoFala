@@ -1,11 +1,9 @@
-// screens/LoginScreen.js
-import React from 'react';
 import { View, Text, TextInput, TouchableOpacity } from 'react-native';
-import globalStyles from 'C:\Users\Dudam\EcoFala\Styles.js';
+import globalStyles from './Styles';
 
-export default function LoginScreen({ navigation }) {
+export default function Login({ navigation }) {
   return (
-    <View style={globalStyles.container}>
+    <View style={globalStyles.loginContainer}>
       <View style={globalStyles.logoContainer}>
         <Text style={globalStyles.logoText}>LOGO</Text>
       </View>
@@ -22,7 +20,10 @@ export default function LoginScreen({ navigation }) {
         secureTextEntry
       />
 
-      <TouchableOpacity style={globalStyles.button}>
+      <TouchableOpacity 
+        style={globalStyles.button} 
+        onPress={() => navigation.navigate('Menu')}
+      >
         <Text style={globalStyles.buttonText}>Entrar</Text>
       </TouchableOpacity>
 

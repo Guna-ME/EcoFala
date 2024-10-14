@@ -1,9 +1,12 @@
 import { StyleSheet } from 'react-native';
 
 const globalStyles = StyleSheet.create({
-  container: {
+
+  // Estilos da tela de login
+
+  loginContainer: {
     flex: 1,
-    backgroundColor: '#4CAF50',
+    backgroundColor: '#72C3B2',
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
@@ -36,19 +39,43 @@ const globalStyles = StyleSheet.create({
     marginTop: 20,
   },
   buttonText: {
-    color: '#4CAF50',
+    color: '#72C3B2',
     fontSize: 18,
     fontWeight: 'bold',
   },
   linksContainer: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
     width: '100%',
     marginTop: 20,
+    alignItems: 'center',
   },
   linkText: {
     color: '#FFF',
     fontSize: 16,
+    marginVertical: 5,
+  },
+
+  // Estilos do menu
+
+  menuContainer: {
+    flex: 1,
+    backgroundColor: '#FFF', 
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 20,
+  },
+  menuButton: {
+    width: '80%',
+    height: 50,
+    backgroundColor: '#72C3B2', 
+    borderRadius: 25,
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginVertical: 10, 
+  },
+  menuButtonText: {
+    color: '#FFF', 
+    fontSize: 18,
+    fontWeight: 'bold',
   },
 });
 

@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import Login from 'C:\Users\Dudam\EcoFala\telas\Login.js';
+import Login from './Login';
+import Menu from './Menu'; 
 
 const Stack = createStackNavigator();
 
@@ -12,10 +12,15 @@ export default function App() {
       <Stack.Navigator initialRouteName="Login">
         <Stack.Screen
           name="Login"
-          component={LoginScreen}
-          options={{ headerShown: false }} // Esconde o cabeçalho para a tela de login
+          component={Login}
+          options={{ headerShown: false }}
         />
-        {/* Adicione outras telas, como Cadastro e RedefinirSenha, aqui */}
+        <Stack.Screen
+          name="Menu" 
+          component={Menu}
+          options={{ title: 'Menu Principal' }} 
+        />
+        
       </Stack.Navigator>
     </NavigationContainer>
   );
