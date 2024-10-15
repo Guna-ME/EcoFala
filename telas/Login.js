@@ -22,7 +22,7 @@ export default function Login({ navigation }) {
 
       <TouchableOpacity 
         style={globalStyles.button} 
-        onPress={() => navigation.navigate('Menu')}
+        onPress={() => navigation.navigate('Cadastro')}
       >
         <Text style={globalStyles.buttonText}>Entrar</Text>
       </TouchableOpacity>
